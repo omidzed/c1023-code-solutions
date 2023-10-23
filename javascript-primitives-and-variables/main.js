@@ -1,6 +1,6 @@
 const fullName = 'Omid Asadi';
-let isCool = true;
-let totalPets = 0;
+const isCool = true;
+const totalPets = 0;
 
 console.log('fullName: ', fullName);
 console.log('isCool: ', isCool);
@@ -10,7 +10,7 @@ console.log('fullName type: ', typeof fullName);
 console.log('isCool type: ', typeof isCool);
 console.log('totalPets type: ', typeof totalPets);
 
-let unknown = null;
+const unknown = null;
 console.log('uknown:', unknown);
 console.log('unknown type: ', typeof unknown);
 
