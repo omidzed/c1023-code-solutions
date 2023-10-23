@@ -6,8 +6,8 @@ console.log('Value of Area: ', area);
 console.log('typeof Area: ', typeof area);
 
 const bill = 1000;
-const payment = 800;
-const change = bill - payment;
+const payment = 1100;
+const change = payment - bill;
 console.log('Value of change: ', change);
 console.log('typeof change: ', typeof change);
 
@@ -25,12 +25,12 @@ console.log('Value of fullName: ', fullName);
 console.log('typeof fullName: ', typeof fullName);
 
 const pH = 10;
-const isAcidic = (pH < 7);
+const isAcidic = pH < 7;
 console.log('Value of isAcidic: ', isAcidic);
 console.log('typeof isAcidic: ', typeof isAcidic);
 
 const headCount = 11;
-const isSparta = (headCount === 300);
+const isSparta = headCount === 300;
 console.log('Value of isSparta: ', isSparta);
 console.log('typeof isSparta: ', typeof isSparta);
 
