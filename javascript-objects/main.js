@@ -19,10 +19,10 @@ const vehicle = {
   year: 1969
 }
 
-vehicle.color = 'black';
-vehicle.isConvertible = false;
-console.log('Value of vehicle.color: ', vehicle.color);
-console.log('Value of vehicle.isConvertible: ', vehicle.isConvertible);
+vehicle['color'] = 'black';
+vehicle['isConvertible'] = false;
+console.log(`Value of vehicle['color']: `, vehicle['color']);
+console.log(`Value of vehicle['isConvertible']: `, vehicle['isConvertible']);
 console.log('Value of vehicle: ', vehicle);
 
 const pet = {
