@@ -12,7 +12,7 @@ Array literals look like this:
 const numbers = [1, 2, 3, 4, 5];
 
 - How are arrays different from "plain" objects?
-Arrays are specialized objects with ordered, numerically indexed elements and built-in methods for manipulation, while "plain" objects have named properties and lack the array-specific methods and behavior.
+Arrays are specialized objects with ordered, numerically indexed elements.
 
 - What number represents the first index of an array?
 0
