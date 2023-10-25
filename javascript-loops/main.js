@@ -8,5 +8,10 @@
  */
 function getNumbersToTen(){
   const numbers = [];
-  console.log(numbers);
+  let currentNumber = 1;
+  while (currentNumber <= 10) {
+    numbers.push(currentNumber);
+    currentNumber++;
+  }
+  return numbers;
 }
