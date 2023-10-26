@@ -17,15 +17,17 @@ A single execution of the loop body is called an iteration. Basically the repeti
 Before each iteration.
 
 - _When_ does the **initialization** expression of a `for` loop get evaluated?
-
 In the beginning of the loop.
 
 - _When_ does the **condition** expression of a `for` loop get evaluated?
-Af
+Before each iteration.
 
 - _When_ does the **final** expression of a `for` loop get evaluated?
+After each iteration.
+
 
 - Besides a `return` statement, which exits its entire function block, which keyword exits a loop before its **condition** expression evaluates to `false`?
+Break
 
 - What does the `++` increment operator do?
 Add 1 to the variable we have in our initial expression.
