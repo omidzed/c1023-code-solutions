@@ -8,9 +8,11 @@ function pick(source, keys) {
     const key = keys[i];
     if (source[key] !== undefined) {
       result[key] = source[key];
-      i++;
-console.log(result[key]);
-    } console.log(result);
+
+      console.log(result[key]);
+    }i++
+    console.log(result);
   }
   return result;
 }
+
