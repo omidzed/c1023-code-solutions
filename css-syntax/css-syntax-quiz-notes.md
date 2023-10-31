@@ -5,7 +5,9 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - What are the names of the individual pieces of a CSS rule?
-Properties and values are the pairs of individual characteristics we control on the target element
+Selectors, curly braces, properties and values are the pairs of individual characteristics we control on the target element. ==>        selector {
+                      property: value;
+                    }
 
 - In CSS, how do you select elements by their `class` attribute?
 .className { }
