@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+body * {
+  justify-content: center;
+  display: block;
+  font-family: 'Brandon Grotesque', sans-serif;
+}
+
+.container {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.learn-more {
+  text-align: center;
+}
+
+h3 {
+  color: rgb(236, 93, 87);
+}
+
+input, select {
+  width: 400px;
+  margin-bottom: 1rem;
+  height: 2.5rem;
+}
+
+label {
+  margin-left: 0.5rem;
+}
