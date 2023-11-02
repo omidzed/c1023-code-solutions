@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(25,150,218) ;
+  color: rgb(255,255,255);
+  font-family: Lato , sans-serif;
+  text-align: center;
+}
