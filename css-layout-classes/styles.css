@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.row {
+  display: flex;
+}
+
+img {
+  width: 100%;
+}
+
+.column-third {
+  width: calc(100% / 3);
+}
+
+.column-fourth {
+  width: calc(100% / 4);
+}
+
+.column-two-third {
+  width: calc(100% * (2 / 3));
+}
+
+body {
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+p {
+  font-weight: bold;
+}
+
+h1 {
+  margin-bottom: 0.75rem;
+  font-weight: bold;
+}
