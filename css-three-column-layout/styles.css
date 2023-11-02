@@ -37,11 +37,10 @@ img {
   display: flex;
   flex-direction: column;
   flex-basis: calc(100% / 3);
-  width: calc(100% / 3);
   justify-content: space-between;
 }
 
-label {
+.label {
   margin: 1rem;
   margin-bottom: 0;
   font-size: 1.25rem;
