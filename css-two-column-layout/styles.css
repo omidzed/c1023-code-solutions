@@ -3,9 +3,9 @@
 } */
 
 .container {
-  max-width: 900px;
+  max-width: 750px;
   display: flex;
-  margin: 0 auto;
+  margin: 0 2rem;
   flex-direction: column;
   padding: 0 1.5rem;
 }
@@ -20,12 +20,12 @@
 
 button {
   margin: 0 auto;
-  font-size: 0.6rem;
+  font-size: 0.55rem;
   font-weight: bold;
   width: 120px;
-  line-height: 20px;
-  color: rgb(209, 76, 69);
-  border: 2px solid rgb(209, 76, 69);
+  line-height: 22px;
+  color: rgb(216,98,92);
+  border: 2px solid rgb(216,98,92);
 }
 
 .header {
@@ -40,12 +40,14 @@ button {
 h1 {
   font-weight: 700;
   margin-bottom: 0.5rem;
+  letter-spacing: 0.1em;
 }
 
 p {
   font-weight: 400;
   font-size: 0.6rem;
   line-height: 15px;
+  letter-spacing: 0.05em;
 }
 
 img {
@@ -65,7 +67,8 @@ img {
   align-items: flex-start;
   text-align: left;
   width: 75%;
-  padding: 1rem 0;
+  padding: 0.05rem;
+  margin: 0.3rem;
 }
 
 .column-fourth {
@@ -75,11 +78,9 @@ img {
   margin: 0;
 }
 
-h3 {
-  font-size: 0.6rem;
-}
+
 
 .column-titles {
-  font-size: 0.65rem;
-  font-weight: bold;
+  font-size: 0.60rem;
+  font-weight: 700;
 }
