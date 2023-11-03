@@ -20,7 +20,7 @@ The item is removed from the normal document flow and no space is created for th
 The element is positioned relative to its closest positioned ancestor (if any) or to the initial containing block. Its final position is determined by the values of top, right, bottom, and left.
 
 - How do you constrain an absolutely positioned element to a containing block?
-By using the values of top, right, bottom, and left.
+By giving the parents position: relative
 
 - What are the four box offset properties?
 Top, bottom, right, left
