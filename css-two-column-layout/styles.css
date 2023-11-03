@@ -1,0 +1,50 @@
+.container {
+  max-width: 900px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  flex-direction: column;
+  padding: 10px;
+}
+
+button {
+  margin: 0 auto;
+  font-size: 0.6rem;
+  font-weight: bold;
+  width: 120px;
+  line-height: 20px;
+  color: rgb(209, 76, 69);
+  border: 2px solid rgb(209, 76, 69);
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  max-width: 500px;
+  padding: 2rem;
+}
+
+h1 {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-weight: 400;
+  font-size: 0.6rem;
+  line-height: 15px;
+}
+
+.column-half {
+  width: 50%;
+}
+
+.column-three-fourth {
+  width: 75%;
+}
+
+.column-fourth {
+  width: 25%;
+}
