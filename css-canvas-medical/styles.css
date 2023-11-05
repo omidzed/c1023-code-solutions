@@ -1,0 +1,80 @@
+/* stylelint-disable function-url-quotes */
+header {
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  height: 5rem;
+  padding: 1.5rem 4rem;
+  border-bottom: 1px solid rgba(151, 151, 151, 0.123); /* This will only create a bottom border */
+}
+
+.logo {
+  width: 16%;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 2rem;
+  flex-basis: 65%;
+  align-items: center;
+  line-height: 2;
+}
+
+.navigation > * {
+  margin-left: 1.5rem;
+  font-size: 1.1rem;
+  color: rgb(164, 164, 164);
+  font-family: Avenir, sans-serif;
+}
+
+.contact-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(41, 68, 100);
+  background-color: rgb(41, 68, 100);
+  color: white;
+  border-radius: 4px;
+  width: 15%;
+  padding: 0.2rem;
+  margin-left: 0.8rem;
+}
+
+.hero {
+  background-image: url(./images/hero.jpg);
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  margin: 4rem;
+}
+
+.get-started {
+  color: white;
+  background-color: rgb(41, 68, 100);
+  border-radius: 4px;
+}
+
+.hero-inside {
+  position: relative;
+  font-family: Avenir, sans-serif;
+  max-width: 50%;
+  margin: 2em 1.5em 1.5em 0;
+  color: white;
+}
+
+.hero-inside h1 {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+  z-index: 1;
+}
