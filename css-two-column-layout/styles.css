@@ -1,11 +1,7 @@
-/* * {
-  border: 2px solid black ;
-} */
-
 .container {
   max-width: 750px;
+  margin: 0 auto;
   display: flex;
-  margin: 0 2rem;
   flex-direction: column;
   padding: 0 1.5rem;
 }
@@ -25,7 +21,7 @@ button {
   width: 120px;
   line-height: 22px;
   color: rgb(216,98,92);
-  border: 2px solid rgb(216,98,92);
+  border: 1.5px solid rgb(216,98,92);
 }
 
 .header {
