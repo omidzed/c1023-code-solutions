@@ -11,7 +11,7 @@
   </head>
   <body>
     <div class="container">
-      <h3 class="learn-more">LEARN MORE</h3>
+      <p class="learn-more">LEARN MORE</p>
       <label for="email">COMPANY EMAIL</label>
       <input type="email" id="email" placeholder="sally@company.co" />
 
@@ -21,12 +21,15 @@
       <label for="location"> WHERE ARE YOU HIRING?</label>
       <input type="text" id="location" placeholder="City, Country" />
 
-      <label for="name">NAME</label>
-      <select id="name">
+      <label for="name"
+        >HOW MANY ENGINEERS ARE YOU HIRING IN THE NEXT 6 MONTHS?</label
+      >
+      <select class="custom-select" id="engineers">
         <option value="1-2">1-2 Engineers</option>
         <option value="1-2">3-5 Engineers</option>
         <option value="1-2">10+ Engineers</option>
       </select>
+      <button>SUBMIT</button>
     </div>
   </body>
 </html>
