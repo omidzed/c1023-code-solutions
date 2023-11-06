@@ -9,7 +9,7 @@ console.log('#explanation:', $explanation);
 const $hint = document.querySelector('.hint');
 console.log('.hint:', $hint);
 
-const $p = document.querySelector('p');
+const $p = document.querySelectorAll('p');
 console.log('.p:', $p);
 
 const $exampleLink = document.querySelectorAll('.example-link');
