@@ -1,5 +1,10 @@
-body {
-  line-height: 2;
+h1,
+h2 {
   font-family: Karla, sans-serif;
+  line-height: 2;
   font-weight: 600;
+}
+
+p {
+  font-family: Montserrat, sans-serif;
 }
