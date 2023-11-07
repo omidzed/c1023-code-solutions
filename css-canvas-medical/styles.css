@@ -1,17 +1,17 @@
 /* stylelint-disable function-url-quotes */
 .container {
-  max-width: 1000px;
+  width: 1000px;
   margin: 0 auto;
   padding: 0 1.5rem;
 }
 
 header {
-  max-width: 1000px;
+  width: 1000px;
   display: flex;
   justify-content: space-between;
   height: 5rem;
   padding: 1.5rem 4rem;
-  border-bottom: 1px solid rgba(151, 151, 151, 0.123); /* This will only create a bottom border */
+  border-bottom: 1px solid rgba(151, 151, 151, 0.123);
 }
 
 .logo {
@@ -20,7 +20,6 @@ header {
 
 .navigation {
   display: flex;
-  flex-direction: row;
   justify-content: flex-end;
   height: 2rem;
   flex-basis: 65%;
@@ -90,4 +89,14 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.locations {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.row{
+ displauy                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
 }
