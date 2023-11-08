@@ -22,6 +22,7 @@ button {
   line-height: 22px;
   color: rgb(216,98,92);
   border: 1.5px solid rgb(216,98,92);
+  background-color: rgb(255,255,255);
 }
 
 .header {
