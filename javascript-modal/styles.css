@@ -19,44 +19,41 @@ body {
   width: 100%;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  height: 100vh;
-}
-
 .modal {
   background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 20rem;
-  padding: 2rem;
-  border-radius: 3px;
+  width: 40rem;
+  height: 20rem;
+  border-radius: 5px;
 }
 
 .open-modal {
+  margin: 10px;
   z-index: -1;
   color: white;
   background-color: blue;
-  width: 8rem;
+  width: 16rem;
   border: 1px solid blue;
   border-radius: 4px;
   line-height: 2;
-  font-size: 1rem;
+  font-size: 2rem;
   position: absolute;
 }
 
 .no {
   background-color: rgb(235, 93, 93);
   color: white;
-  width: 4rem;
+  width: 8rem;
   line-height: 2;
   border: 1px solid rgb(235, 93, 93);
   border-radius: 3px;
   margin: 0 auto;
+  font-size: 1.7rem;
+}
+
+h1 {
+  margin-bottom: 4rem;
 }
