@@ -5,12 +5,13 @@
 After completing this exercise, you should be able to discuss or answer the following questions:
 
 - What is the `event.target`?
-An element that we could add an eventListener to that is waiting for certain events to occur in the DOM, which then will trigger the target element to perform some function.
+event.target is the element that triggered the event, whereas event.currentTarget is the element that actually has the addEventListener attached to it.
 
 - Why is it possible to listen for events on one element that actually happen its descendent elements?
 Because of the concept of event bubbling, where if an eventListener is added to a child element of some element, and once the event occurs, the parent element get takes notice and event bubbling 'bubbles up' that event up to them.
 
 - What DOM element property tells you what type of element it is?
+element.nodeName
 
 - What does the `element.closest()` method take as its argument and what does it return?
 The closest() method of the Element interface traverses the element and its parents (heading toward the document root) until it finds a node that matches the specified CSS selector.
