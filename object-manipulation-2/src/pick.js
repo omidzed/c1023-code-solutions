@@ -10,9 +10,9 @@ function pick(source, keys) {
       result[key] = source[key];
 
       console.log(result[key]);
-    }i++
+    }
+    i++;
     console.log(result);
   }
   return result;
 }
-
