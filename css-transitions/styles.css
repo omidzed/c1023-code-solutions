@@ -16,6 +16,7 @@ section {
 }
 
 .custom-button {
+  transition: background-color .5s;
   padding: 0.5rem 1.5rem;
   border: none;
   border-radius: 0.25rem;
@@ -24,11 +25,16 @@ section {
   background-color: blue;
 }
 
+.custom-button:hover {
+background-color: red;
+}
+
 .card-wrapper {
   text-align: center;
 }
 
 .card {
+  transition: transform .5s;
   max-width: 18rem;
   padding: 0.5rem;
   margin-bottom: 2rem;
@@ -41,4 +47,8 @@ section {
 
 .card > img {
   width: 100%;
+}
+
+.card:hover {
+  transform: scale(1.1);
 }
