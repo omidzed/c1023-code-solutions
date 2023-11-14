@@ -68,6 +68,7 @@ header {
   border-radius: 4px;
   line-height: 3;
   padding: 0 2.5rem;
+  font-family: Avenir, sans-serif;
 }
 
 .hero-inside {
@@ -126,7 +127,7 @@ section {
   padding: 4rem;
   font-family: Avenir, sans-serif;
   font-size: 0.9rem;
-  color: rgb(122,122,122);
+  color: rgb(122, 122, 122);
   filter: grayscale(90%);
   background-color: rgba(245, 246, 247, 0.445);
   width: 100%;
@@ -147,7 +148,54 @@ h2 {
   font-weight: 100;
 }
 
+h4 {
+  text-align: left;
+  font-size: 1.7rem;
+  letter-spacing: -0.1rem;
+}
+
 #physician-owned {
   line-height: 1.7;
   margin-bottom: 3rem;
+  text-align: center;
+}
+
+.ready {
+  padding: 1.5rem 4rem;
+  align-items: center;
+  line-height: 0.1;
+}
+
+p {
+  text-align: left;
+}
+
+.bottom-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(85, 84, 84, 0.898);
+  color: white;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  padding: 2rem;
+}
+
+.row-bottom {
+  display: flex;
+  border: 1px solid black;
+}
+
+.white-logo {
+  width: 4rem;
+  max-height: 100% ;
+}
+
+.column-half {
+  width: 50%;
+  display: flex;
 }
