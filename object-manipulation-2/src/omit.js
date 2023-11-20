@@ -10,7 +10,6 @@ function omit(source, keys) {
       delete result[key];
     }
     i++;
-    console.log(result);
   }
   return result;
 }
