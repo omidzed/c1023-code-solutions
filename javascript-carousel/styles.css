@@ -1,0 +1,65 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.carousel {
+  display: flex;
+  width: 732px;
+  height: 408px;
+  border: 3px solid black;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.row-images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.row-circles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% / 3);
+}
+
+img {
+  max-width: 300px;
+  margin: 0 4rem;
+}
+
+.image {
+  width: 50%;
+  margin: 0 3rem;
+}
+
+.chevy {
+  font-size: 2rem;
+}
+
+.fa-solid {
+  color: black;
+}
+
+.chevron {
+  max-width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 2rem;
+}
+
+.column-circle {
+  width: 25px;
+}
