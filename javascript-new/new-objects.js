@@ -1,32 +1,20 @@
-// In the provided new- objects.js, complete the following tasks for each of these built -in JavaScript constructors:
-// Object, Array, Function, String, Number, and Boolean:
-
-// Call the constructor with new and assign the return value to a variable.
-
-// e.g. const anObject = new Object();
-
-// Log the value of the instance to the console.
-
-// e.g. console.log('value of anObject:', anObject);
-
-// Log the typeof the instance to the console.
-
-// e.g. console.log('typeof anObject:', typeof anObject);
-
-// repeat for Array, Function, String, Number, and Boolean.
-
 const newObject = new Object();
-console.log('Value of newObject:', newObject);
+const newArray = new Array();
+const newFunction = new Function();
+const newString = new String();
+const newNumber = new Number();
+const newBoolean = new Boolean();
+
+console.log('value of newObject:', newObject);
+console.log('value of newArray:', newArray);
+console.log('value of newFunction:', newFunction);
+console.log('value of newString:', newString);
+console.log('value of newNumber:', newNumber);
+console.log('value of newBoolean:', newBoolean);
+
 console.log('typeof newObject:', typeof newObject);
-
-const anArray = new Array();
-console.log('Value of anArray:', anArray);
-console.log('typeof anArray:', typeof anArray);
-
-const todaysFunction = new Function();
-console.log('Value of todaysFunction:', todaysFunction);
-console.log('typeof todaysFunction :', typeof todaysFunction);
-
-const anArray = new Array();
-console.log('Value of anArray:', anArray);
-console.log('typeof anArray:', typeof anArray);
+console.log('typeof newArray:', typeof newArray);
+console.log('typeof newFunction:', typeof newFunction);
+console.log('typeof newString:', typeof newString);
+console.log('typeof newNumber:', typeof newNumber);
+console.log('typeof newBoolean:', typeof newBoolean);
