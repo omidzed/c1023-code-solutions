@@ -94,12 +94,6 @@ header {
   margin-bottom: 1.5rem;
 }
 
-.middle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .locations {
   display: flex;
   flex-direction: column;
@@ -121,13 +115,20 @@ header {
   z-index: 1;
 }
 
+.middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 section {
   display: flex;
   flex-direction: column;
   padding: 4rem;
   font-family: Avenir, sans-serif;
   font-size: 0.9rem;
-  color: rgb(122, 122, 122);
+  color: rgb(96, 96, 96);
   filter: grayscale(90%);
   background-color: rgba(245, 246, 247, 0.445);
   width: 100%;
@@ -150,7 +151,7 @@ h2 {
 
 h4 {
   text-align: left;
-  font-size: 1.7rem;
+  font-size: 2rem;
   letter-spacing: -0.1rem;
 }
 
@@ -158,24 +159,23 @@ h4 {
   line-height: 1.7;
   margin-bottom: 3rem;
   text-align: center;
+  font-size: 1rem;
 }
 
 .ready {
+  display: flex;
+  justify-content: space-between;
   padding: 1.5rem 4rem;
   align-items: center;
   line-height: 0.1;
 }
 
-p {
-  text-align: left;
-}
-
 .bottom-nav {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   background-color: rgba(85, 84, 84, 0.898);
   color: white;
+  padding: 4rem;
+  justify-content: space-between;
 }
 
 .footer-column {
@@ -187,15 +187,64 @@ p {
 
 .row-bottom {
   display: flex;
-  border: 1px solid black;
 }
 
 .white-logo {
-  width: 4rem;
-  max-height: 100% ;
+  width: 8rem;
 }
 
 .column-half {
   width: 50%;
   display: flex;
+  flex-direction: column;
+}
+
+h3,
+h4 {
+  white-space: nowrap;
+  color: rgba(98, 98, 98, 0.813);
+}
+
+span {
+  text-align: left;
+  font-family: Avenir, sans-serif;
+  margin-bottom: 2rem;
+  color: rgba(98, 98, 98, 0.813);
+  font-weight: bold;
+}
+
+.address {
+  margin-top: 2rem;
+  white-space: nowrap;
+  font-family: Avenir, sans-serif;
+  line-height: 1.5;
+}
+
+.bottom-lists {
+  display: flex;
+  flex-direction: column;
+}
+
+.column-third {
+  width: calc(100% / 3);
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-left: 9rem;
+  font-family: Avenir, sans-serif;
+  white-space: nowrap;
+}
+
+footer {
+  display: flex;
+  background-color: white;
+  padding: 1rem 4rem;
+  margin-top: 2rem;
+  font-family: Avenir, sans-serif;
+  color: rgb(70, 70, 70);
+  gap: 3rem;
 }
