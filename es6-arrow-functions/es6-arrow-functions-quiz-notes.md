@@ -27,7 +27,7 @@ None, they do not have their own arguments
 42
 
   - How many arguments are passed to the function `foo`?
-None
+One
 
   - What type of argument is passed to the function `foo`?
 An arrow function
@@ -44,10 +44,10 @@ An arrow function
    }
 
     - How many arguments does the arrow function take?
-    None, y belongs to function bar
+    One
 
     - What value does it return?
-    console.log(`4y = ${4 * y}`)
+    Undefined
 
     - How many arguments are passed to the function `bar`?
     1
