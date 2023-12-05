@@ -12,9 +12,9 @@ const names = [
   'Donna',
 ];
 
-const evens = numbers.filter((number) => number % 2 === 0);
+const evens = numbers.filter((n) => n % 2 === 0);
 console.log('Evens:', evens);
 
 
-const noDs = names.filter((name) => !name.toLowerCase().includes('d'));
+const noDs = names.filter((n) => !n.toLowerCase().includes('d'));
 console.log('No Ds:', noDs);
