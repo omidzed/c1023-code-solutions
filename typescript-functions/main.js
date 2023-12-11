@@ -1,39 +1,36 @@
-// function convertMinutesToSeconds(minutes: number) {
-//   const seconds: number = minutes * 60;
-//   return seconds;
-// }
-// const convertMinutesToSecondsResult = convertMinutesToSeconds(5);
-// console.log('convertMinutesToSecondsResult',convertMinutesToSecondsResult );
-// function greet(name: string) {
-//   const greeting: string = 'Hi ' + name + '!';
-//   return greeting;
-// }
-// const greetResult = greet('Bob');
-// console.log('Greeting message:', greetResult);
-// function getArea(width: number, height: number) {
-//   const area: number = width * height;
-//   return area;
-// }
-// console.log('Area of rectangle:', getArea(2, 5));
-// interface Person {
-//   firstName: string;
-//   lastName: string;
-// }
-// function getFirstName(person: Person) {
-//   const firstName: string;
-//   return firstName;
-// }
-// const person = { firstName: 'Jack', lastName: 'Bauer' };
-// console.log("Person's first name:", getFirstName(person));
+function convertMinutesToSeconds(minutes) {
+  var number = minutes * 60;
+  return number;
+}
+var convertMinutesToSecondsResult = convertMinutesToSeconds(5);
+console.log('convertMinutesToSecondsResult', convertMinutesToSecondsResult);
+function greet(name) {
+  var greeting = 'Hi ' + name + '!';
+  return greeting;
+}
+var greetResult = greet('Bob');
+console.log('Greeting message:', greetResult);
+function getArea(width, height) {
+  var area = width * height;
+  return area;
+}
+console.log('Area of rectangle:', getArea(2, 5));
+function getFirstName(person) {
+  return person.firstName;
+}
+console.log(
+  "Person's first name:",
+  getFirstName({ firstName: 'David', lastName: 'Hasselhoff' })
+);
 // function getLastElement(array: string[]): string {
 //   const lastIndex: number = array.length - 1;
 //   const lastElement: string = array[lastIndex];
 //   return lastElement;
 // }
-// const getLastElementResult: string = getLastElement([
+// const getLastElementResult = getLastElement: string[]([
 //   'propane',
 //   'and',
 //   'propane',
 //   'accessories',
 // ]);
-// console.log('getLastElementResult:', getLastElement)
+// console.log('getLastElementResult:', getLastElementResult);

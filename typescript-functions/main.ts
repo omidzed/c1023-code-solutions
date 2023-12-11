@@ -1,45 +1,46 @@
-// function convertMinutesToSeconds(minutes: number) {
-//   const seconds: number = minutes * 60;
-//   return seconds;
-// }
-// const convertMinutesToSecondsResult = convertMinutesToSeconds(5);
-// console.log('convertMinutesToSecondsResult',convertMinutesToSecondsResult );
+function convertMinutesToSeconds(minutes: number): number {
+  const number: number = minutes * 60;
+  return number;
+}
+const convertMinutesToSecondsResult: number = convertMinutesToSeconds(5);
+console.log('convertMinutesToSecondsResult', convertMinutesToSecondsResult);
 
-// function greet(name: string) {
-//   const greeting: string = 'Hi ' + name + '!';
-//   return greeting;
-// }
-// const greetResult = greet('Bob');
-// console.log('Greeting message:', greetResult);
+function greet(name: string): string {
+  const greeting: string = 'Hi ' + name + '!';
+  return greeting;
+}
+const greetResult: string = greet('Bob');
+console.log('Greeting message:', greetResult);
 
-// function getArea(width: number, height: number) {
-//   const area: number = width * height;
-//   return area;
-// }
+function getArea(width: number, height: number): number {
+  const area: number = width * height;
+  return area;
+}
 
-// console.log('Area of rectangle:', getArea(2, 5));
+console.log('Area of rectangle:', getArea(2, 5));
 
-// interface Person {
-//   firstName: string;
-//   lastName: string;
-// }
+interface Person {
+  firstName: string;
+  lastName: string;
+}
 
-// function getFirstName(person: Person) {
-//   const firstName: string;
-//   return firstName;
-// }
-// const person = { firstName: 'Jack', lastName: 'Bauer' };
-// console.log("Person's first name:", getFirstName(person));
+function getFirstName(person: Person): string {
+  return person.firstName;
+}
+console.log(
+  "Person's first name:",
+  getFirstName({ firstName: 'David', lastName: 'Hasselhoff' })
+);
 
 // function getLastElement(array: string[]): string {
 //   const lastIndex: number = array.length - 1;
 //   const lastElement: string = array[lastIndex];
 //   return lastElement;
 // }
-// const getLastElementResult: string = getLastElement([
+// const getLastElementResult = getLastElement: string[]([
 //   'propane',
 //   'and',
 //   'propane',
 //   'accessories',
 // ]);
-// console.log('getLastElementResult:', getLastElement)
+// console.log('getLastElementResult:', getLastElementResult);
