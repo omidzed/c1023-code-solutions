@@ -1,16 +1,19 @@
-// import { readFile, writeFile } from 'node:fs/promises';
+import { readFile, writeFile } from 'node:fs/promises';
 
-// try {
-//   await readFile('node-fs-writefile/note.txt);
-//   console.log('source.txt was copied to destination.txt');
-// } catch {
-//   console.error('The file could not be copied');
-// }
+const [source, destination] = process.argv.slice(2);
 
-// // By using COPYFILE_EXCL, the operation will fail if destination.txt exists.
-// try {
-//   await copyFile('source.txt', 'destination.txt', constants.COPYFILE_EXCL);
-//   console.log('source.txt was copied to destination.txt');
-// } catch {
-//   console.error('The file could not be copied');
-// }
+if (!source || !destination) {
+  console.error('Usage: cp <source> <destination>');
+  process.exit(1);
+}
+
+try {
+  const content = await readFile(source, 'utf8');
+
+  await writeFile(destination, content);
+
+  console.log(`Copied ${source} to ${destination}`);
+} catch (err) {
+  console.error('Error:', err);
+  process.exit(1);
+}

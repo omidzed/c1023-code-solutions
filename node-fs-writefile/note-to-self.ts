@@ -1,6 +1,5 @@
 import { writeFile } from 'node:fs/promises';
 
-// const note = process.argv[2];
 const [, , note] = process.argv;
 
 try {
