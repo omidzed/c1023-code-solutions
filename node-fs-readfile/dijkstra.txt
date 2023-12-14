@@ -1,0 +1,20 @@
+import { readFile } from 'node:fs/promises';
+
+Simplicity is a great virtue but it requires hard work to achieve it and education to appreciate it. And to make matters worse: complexity sells better.
+
+
+
+const fs = require('fs').promises;
+
+async function readFileContents() {
+    try {
+        // Read the contents of the file
+        const data = await fs.readFile('dijkstra.txt', 'utf-8');
+        console.log(data);
+    } catch (error) {
+        // Handle any errors that occur during reading
+        console.error('Error reading file:', error);
+    }
+}
+
+readFileContents();
