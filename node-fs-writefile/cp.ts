@@ -8,7 +8,7 @@ if (!source || !destination) {
 }
 
 try {
-  const content = await readFile(source, 'utf8');
+  const content = await readFile(source);
 
   await writeFile(destination, content);
 
