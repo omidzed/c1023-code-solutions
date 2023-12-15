@@ -1,7 +1,5 @@
 import { read } from './read.js';
 
-// Keep track of app load time so each log message can be timed.
-// Log messages should all be approximately 1 second apart.
 const startTime = Date.now();
 const elapsed = (): string =>
   `${Math.round((Date.now() - startTime) / 1000)}s -`;

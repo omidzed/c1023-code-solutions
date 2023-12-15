@@ -1,7 +1,5 @@
 import { read } from './read.js';
 
-// Keep track of app load time so each log message can be timed.
-// Log messages should all be approximately 1 second apart.
 const startTime = Date.now();
 const elapsed = (): string =>
   `${Math.round((Date.now() - startTime) / 1000)}s -`;
@@ -10,8 +8,8 @@ async function throwOnce(): Promise<void> {
   try {
     const msg = await read('foo', false);
     console.log(elapsed(), 'throwOnce:', msg);
-  } catch (error) {
-    console.error(elapsed(), 'throwOnce Error:', error.message);
+  } catch (err) {
+    console.error(elapsed(), 'throwOnce Error:', err);
   }
 }
 
@@ -25,8 +23,8 @@ async function throwSeveral(): Promise<void> {
 
     const msg3 = await read('foo3', false);
     console.log(elapsed(), 'throwSeveral3:', msg3);
-  } catch (error) {
-    console.error(elapsed(), 'throwSeveral Error:', error.message);
+  } catch (err) {
+    console.error(elapsed(), 'throwSeveral Error:', err);
   }
 }
 
@@ -40,8 +38,8 @@ async function throwChained(): Promise<void> {
 
     const msg3 = await read(msg2, false);
     console.log(elapsed(), 'throwChained3:', msg3);
-  } catch (error) {
-    console.error(elapsed(), 'throwChained Error:', error.message);
+  } catch (err) {
+    console.error(elapsed(), 'throwChained Error:', err);
   }
 }
 
