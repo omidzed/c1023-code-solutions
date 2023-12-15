@@ -35,7 +35,7 @@ app.get('/api/grades', (req, res) => {
   for (const id in grades) {
     gradesArray.push(grades[id]);
   }
-  res.send(gradesArray);
+  res.json(gradesArray);
 });
 
 app.listen(8080, () => {
