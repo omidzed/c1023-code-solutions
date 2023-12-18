@@ -1,0 +1,9 @@
+* {
+  box-sizing: border-box;
+  /* stylelint-disable-next-line comment-empty-line-before */
+  /* border: 1px solid palevioletred; */
+}
+
+body {
+  margin: 0;
+}

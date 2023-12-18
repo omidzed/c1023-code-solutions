@@ -1,0 +1,250 @@
+/* stylelint-disable function-url-quotes */
+.container {
+  width: 1000px;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 5rem;
+  padding: 1.5rem 4rem;
+  border-bottom: 1px solid rgba(151, 151, 151, 0.123);
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.logo {
+  width: 16%;
+}
+
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+  height: 1rem;
+  flex-basis: 65%;
+  align-items: center;
+  line-height: 3;
+}
+
+.navigation > * {
+  margin-left: 3rem;
+  font-size: 0.8rem;
+  color: rgb(164, 164, 164);
+  font-family: Avenir, sans-serif;
+  white-space: nowrap;
+}
+
+.blog {
+  margin-right: 0.8rem;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(41, 68, 100);
+  background-color: rgb(41, 68, 100);
+  color: white;
+  border-radius: 4px;
+  padding: 0 1rem;
+  margin-left: 0.8rem;
+}
+
+.hero {
+  background-image: url(./images/hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  margin: 3rem 4rem;
+  max-width: 100%;
+}
+
+.get-started {
+  display: inline-flex;
+  justify-content: center;
+  color: white;
+  background-color: rgb(41, 68, 100);
+  border-radius: 4px;
+  line-height: 3;
+  padding: 0 2.5rem;
+  font-family: Avenir, sans-serif;
+}
+
+.hero-inside {
+  font-family: Avenir, sans-serif;
+  max-width: 55%;
+  color: white;
+  padding: 4.5rem 2rem;
+  position: relative;
+  z-index: 2;
+  margin: 2rem;
+}
+
+.hero-inside h1 {
+  font-family: 'Tiempos Headline', Courier, monospace;
+  font-weight: normal;
+  margin: 0;
+  font-size: 1.9rem;
+}
+
+.hero-inside p {
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.locations {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to right,
+    rgba(99, 98, 98, 0.392),
+    rgba(99, 98, 98, 0.392)
+  );
+  z-index: 1;
+}
+
+.middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  font-family: Avenir, sans-serif;
+  font-size: 0.9rem;
+  color: rgb(96, 96, 96);
+  filter: grayscale(90%);
+  background-color: rgba(245, 246, 247, 0.445);
+  width: 100%;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.115);
+}
+
+.row {
+  display: flex;
+  text-align: center;
+  line-height: 1;
+  justify-content: space-between;
+  gap: 9rem;
+}
+
+h2 {
+  font-family: 'Tiempos Headline', Courier, monospace;
+  font-size: 1.8rem;
+  font-weight: 100;
+}
+
+h4 {
+  text-align: left;
+  font-size: 2rem;
+  letter-spacing: -0.1rem;
+}
+
+#physician-owned {
+  line-height: 1.7;
+  margin-bottom: 3rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.ready {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 4rem;
+  align-items: center;
+  line-height: 0.1;
+}
+
+.bottom-nav {
+  display: flex;
+  background-color: rgba(85, 84, 84, 0.898);
+  color: white;
+  padding: 4rem;
+  justify-content: space-between;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  padding: 2rem;
+}
+
+.row-bottom {
+  display: flex;
+}
+
+.white-logo {
+  width: 8rem;
+}
+
+.column-half {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+h3,
+h4 {
+  white-space: nowrap;
+  color: rgba(98, 98, 98, 0.813);
+}
+
+span {
+  text-align: left;
+  font-family: Avenir, sans-serif;
+  margin-bottom: 2rem;
+  color: rgba(98, 98, 98, 0.813);
+  font-weight: bold;
+}
+
+.address {
+  margin-top: 2rem;
+  white-space: nowrap;
+  font-family: Avenir, sans-serif;
+  line-height: 1.5;
+}
+
+.bottom-lists {
+  display: flex;
+  flex-direction: column;
+}
+
+.column-third {
+  width: calc(100% / 3);
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-left: 9rem;
+  font-family: Avenir, sans-serif;
+  white-space: nowrap;
+}
+
+footer {
+  display: flex;
+  background-color: white;
+  padding: 1rem 4rem;
+  margin-top: 2rem;
+  font-family: Avenir, sans-serif;
+  color: rgb(70, 70, 70);
+  gap: 3rem;
+}
