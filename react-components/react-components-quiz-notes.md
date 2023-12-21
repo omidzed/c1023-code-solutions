@@ -9,6 +9,6 @@ After completing this exercise, you should be able to discuss or answer the foll
 
 - How do you define a component in React?
 
-- How is a component "rendered" (made visible on the browser page)?
+- How is a component "rendered" (made visible on the browser page)???
 
 ## Notes
