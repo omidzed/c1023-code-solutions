@@ -1,35 +1,22 @@
 import { CSSProperties } from 'react';
-import React from 'react';
 
 type CustomButtonProps = {
-  className?: string;
   style?: CSSProperties;
   text: string;
-  onClick: () => void;
+  onCustomClick: (text: string) => void;
 };
 
-export const CustomButton: React.FC<CustomButtonProps> = ({
-  onClick,
-  style,
+export function CustomButton({
   text,
-}) => {
+  style,
+  onCustomClick,
+}: CustomButtonProps) {
+  function handleCustomClick() {
+    onCustomClick(text);
+  }
   return (
-    <button style={style} onClick={onClick}>
+    <button style={style} onClick={handleCustomClick}>
       {text}
     </button>
   );
-};
-
-// ({ style, text, onClick }: CustomButtonProps) {
-//   function handleClick() {
-//     alert('You clicked me!');
-//   }
-//   return (
-//     <button onClick={handleClick} style={style}>
-//
-//     </button>
-//   );
-// }
-// Button: React.FC<Props> = ({ onClick }) => {
-//   return <button onClick={onClick}>Click me</button>;
-// };
+}

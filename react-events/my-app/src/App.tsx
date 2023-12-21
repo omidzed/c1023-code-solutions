@@ -3,26 +3,23 @@ import './CustomButton.css';
 import { CustomButton } from './CustomButton';
 
 function App() {
-  const handleClick = () => {
-    window.alert('Button clicked!');
-  };
+  function handleCustomClick(text: string) {
+    window.alert(text);
+  }
   return (
     <>
       <CustomButton
-        className="i-button"
-        onClick={handleClick}
+        onCustomClick={handleCustomClick}
         text="I"
         style={{ color: 'black', backgroundColor: 'orange' }}
       />
       <CustomButton
-        className="know-button"
-        onClick={handleClick}
+        onCustomClick={handleCustomClick}
         text="know"
-        style={{ color: 'black', backgroundColor: 'blue' }}
+        style={{ color: 'white', backgroundColor: 'blue' }}
       />
       <CustomButton
-        className="react-button"
-        onClick={handleClick}
+        onCustomClick={handleCustomClick}
         text="React!"
         style={{ color: 'black', backgroundColor: 'yellow' }}
       />
