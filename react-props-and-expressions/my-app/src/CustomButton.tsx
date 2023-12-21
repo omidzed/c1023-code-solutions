@@ -1,7 +1,10 @@
+import { CSSProperties } from 'react';
+
 type CustomButtonProps = {
-  className: string;
+  style?: CSSProperties;
   text: string;
 };
-export default function CustomButton(Props: CustomButtonProps) {
-  return <button className={Props.className}>{Props.text}</button>;
+
+export function CustomButton({ style, text }: CustomButtonProps) {
+  return <button style={style}>{text}</button>;
 }
