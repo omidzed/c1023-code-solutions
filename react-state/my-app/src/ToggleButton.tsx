@@ -1,15 +1,24 @@
-import { CSSProperties } from 'react';
+import { useState } from 'react';
 
 type Props = {
-  style?: CSSProperties;
   text: string;
-  onFoo?: () => void;
+  color: string;
 };
 
-export function ToggleButton({ text, style, onFoo }: Props) {
+export function ToggleButton({ text, color }: Props) {
+  const [isClicked, setIsClicked] = useState(true);
+  console.log('state hook just ran');
+
+  function handleClick() {
+    setIsClicked(!isClicked);
+  }
   return (
-    <button onClick={onFoo} style={style}>
-      {' '}
+    <button
+      onClick={handleClick}
+      style={{
+        backgroundColor: isClicked ? 'white' : color,
+        color: isClicked ? color : 'white',
+      }}>
       {text}
     </button>
   );
