@@ -1,0 +1,31 @@
+.hot-button {
+  border: 2px solid rgb(70, 70, 70);
+  border-radius: 0.25rem;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  background-color: rgb(54, 28, 117);
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.lavender {
+  background-color: rgb(103, 78, 167);
+}
+
+.pink {
+  background-color: rgb(224, 102, 102);
+}
+
+.orange {
+  background-color: rgb(246, 178, 107);
+  color: black;
+}
+
+.yellow {
+  background-color: rgb(255, 255, 0);
+  color: black;
+}
+
+.white {
+  background-color: white;
+  color: black;
+}

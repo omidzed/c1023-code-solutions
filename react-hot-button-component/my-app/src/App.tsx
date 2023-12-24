@@ -1,21 +1,13 @@
-// import './App.css';
-// import { HotButton } from './HotButton';
-// import { useState } from 'react';
+import './App.css';
+import { HotButton } from './HotButton';
 
-// function App() {
-//   const [count, setCount] = useState(0);
-//   function handleClick() {
-//     () => setCount((count:number) => count + 1);
-//   }
-//   return (
-//     <>
-//       <HotButton text="Hot Button"/>
+function App() {
+  const label = 'Clicks: ';
+  return (
+    <>
+      <HotButton label={label} />
+    </>
+  );
+}
 
-//         style={{ color: 'black', backgroundColor: 'orange' }}
-//       />
-//       <h1>Number of Clicks {count}</h1>
-//     </>
-//   );
-// }
-
-// export default App;
+export default App;

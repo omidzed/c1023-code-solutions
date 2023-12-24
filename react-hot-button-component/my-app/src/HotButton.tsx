@@ -1,45 +1,45 @@
-// // import { CSSProperties } from 'react';
+import { useState, useEffect } from 'react';
+import './HotButton.css';
 
-// // type Props = {
-// //   style?: CSSProperties;
-// //   text: string;
-// // };
+type Props = {
+  label: string;
+  style?: string;
+};
 
-// // export function HotButton({ text, style }: Props) {
+export function HotButton({ label }: Props) {
+  const [clicks, setClicks] = useState(0);
 
-// //   return (
-// //     <button
+  useEffect(() => {
+    console.log('Clicks:', clicks);
+  }, [clicks]);
 
-// //       style={style}
-// //       onClick={handleClick}>
-// //       {text}
-// //     </button>
-// //   );
-// // }
-// import { useState } from 'react';
-// import './HotButton.css';
+  function handleClick() {
+    setClicks((clicks: number) => clicks + 1);
+    label = `${clicks}`;
+  }
+  let className = 'hot-button';
+  if (clicks > 14) {
+    className = 'hot-button yellow';
+  } else if (clicks > 11) {
+    className = 'hot-button yellow';
+  } else if (clicks > 8) {
+    className = 'hot-button orange';
+  } else if (clicks > 5) {
+    className = 'hot-button pink';
+  } else if (clicks > 2) {
+    className = 'hot-button lavender';
+  }
 
-// type Props = {
-//   label: string;
-// };
-
-// export function HotButton({ label }: Props) {
-//   const [clicks, setClicks] = useState(0);
-
-//   let warmth;
-//   if (clicks >= 4) {
-//     setClicks(0);
-//   }
-//   if (clicks >= 7) {
-//     $hotButton.setAttribute('class', 'hot-button tepid');
-//   }
-//   if (clicks >= 10) {
-//     $hotButton.setAttribute('class', 'hot-button warm');
-//   }
-//   if (clicks >= 13) {
-//     $hotButton.setAttribute('class', 'hot-button hot');
-//   }
-//   if (clicks >= 16) {
-//     $hotButton.setAttribute('class', 'hot-button nuclear');
-//   }
-// }
+  return (
+    <>
+      <button className={className} onClick={handleClick}>
+        <span>Hot Button</span>
+      </button>
+      <div className="click-count">
+        <p>
+          {label} {clicks}
+        </p>
+      </div>
+    </>
+  );
+}
