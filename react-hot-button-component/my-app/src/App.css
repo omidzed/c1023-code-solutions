@@ -22,20 +22,3 @@ main {
   align-items: center;
   justify-content: center;
 }
-
-.hot-button:focus {
-  outline: none;
-}
-
-.hot-button:active {
-  top: 3px;
-}
-
-.click-count {
-  margin-top: 1rem;
-  padding: 0.5rem 0;
-  text-align: center;
-  color: black;
-  background-color: yellow;
-  border: 2px solid black;
-}
