@@ -32,15 +32,19 @@ console.log(
   getFirstName({ firstName: 'David', lastName: 'Hasselhoff' })
 );
 
-// function getLastElement(array: string[]): string {
-//   const lastIndex: number = array.length - 1;
-//   const lastElement: string = array[lastIndex];
-//   return lastElement;
-// }
-// const getLastElementResult = getLastElement: string[]([
-//   'propane',
-//   'and',
-//   'propane',
-//   'accessories',
-// ]);
-// console.log('getLastElementResult:', getLastElementResult);
+function getLastElement(array: string[]): string {
+  const lastIndex: number = array.length - 1;
+  const lastElement: string = array[lastIndex];
+  return lastElement;
+}
+const array: string[] = ['propane', 'and', 'propane', 'accessories'];
+const last: string = getLastElement(array);
+const result: string = getLastElement([
+  'propane',
+  'and',
+  'propane',
+  'accessories',
+]);
+
+console.log(result);
+console.log('last element:', last);
