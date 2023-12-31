@@ -3,5 +3,5 @@ type BannerProps = {
   index: number;
 };
 export function Banner({ items, index }: BannerProps) {
-  return <div className="banner">{items[index]}</div>;
+  return <div className="border-black banner">{items[index]}</div>;
 }

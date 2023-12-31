@@ -1,4 +1,5 @@
 import './App.css';
+import './index.css';
 import { RotatingBanner } from './RotatingBanner';
 
 function App() {
