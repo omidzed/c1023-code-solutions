@@ -4,7 +4,7 @@ type PrevButtonProps = {
 };
 export function PrevButton({ index, onPrevClick }: PrevButtonProps) {
   return (
-    <button className="text-red-700" onClick={() => onPrevClick(index)}>
+    <button className="prev-button" onClick={() => onPrevClick(index)}>
       PREV
     </button>
   );

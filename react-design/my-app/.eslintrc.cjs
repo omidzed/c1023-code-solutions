@@ -9,7 +9,7 @@ module.exports = {
   ignorePatterns: [
     'dist',
     '.eslintrc.cjs',
-    'react-design/my-app/dist/output.css',
+    '/my-app/dist/output.css',
   ],
   parser: '@typescript-eslint/parser',
   plugins: ['react-refresh'],
