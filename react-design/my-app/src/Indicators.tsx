@@ -13,7 +13,7 @@ export function Indicators({
       {[...Array(count).keys()].map((i) => (
         <button
           key={i}
-          className={i === index ? 'active' : ''}
+          className={i === index ? 'active' : 'indicator'}
           onClick={() => onIndicatorsClick(i)}>
           {i}
         </button>
