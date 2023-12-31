@@ -13,9 +13,22 @@ export function RotatingBanner({ items }: RotatingBannerProps) {
   return (
     <div className="column-main">
       <Banner index={index} items={items} />
-      <PrevButton onPrevClick={(index) => setIndex(index - 1)} index={index} />
-      <Indicators onIndicatorsClick={() => setIndex(index)} index={index} />
-      <NextButton onNextClick={(index) => setIndex(index++)} index={index} />
+      <PrevButton
+        onPrevClick={(index) =>
+          index > 0 ? setIndex(index - 1) : setIndex(index)
+        }
+        index={index}
+      />
+      <Indicators
+        onIndicatorsClick={(index) => setIndex(index)}
+        index={index}
+      />
+      <NextButton
+        onNextClick={(index) =>
+          index < items.length - 1 ? setIndex(index + 1) : setIndex(index)
+        }
+        index={index}
+      />
     </div>
   );
 }
