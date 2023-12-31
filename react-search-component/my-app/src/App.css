@@ -1,0 +1,27 @@
+body {
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.search-box {
+  text-align: center;
+  padding: 2rem;
+  margin: 1rem;
+  margin-top: 4rem;
+}
+
+input {
+  background-image: url('./search-solid.svg'); /* Path to your SVG */
+  background-repeat: no-repeat;
+  background-size: 20px 20px; /* Size of your SVG */
+  background-position: 8px 8px; /* Position of your SVG */
+  padding-left: 2.5rem;
+  width: 40%;
+  height: 2rem;
+  font-size: 1rem;
+}
+
+.quotes-list {
+  margin-left: 2rem;
+  font-size: 1.3rem;
+}
