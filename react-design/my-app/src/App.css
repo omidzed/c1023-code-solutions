@@ -27,14 +27,14 @@ body {
 .prev-button {
   margin-bottom: 0.25rem;
   color: white;
-  background-color: green;
+  background-color: red;
   cursor: pointer;
 }
 
 .next-button {
   margin-top: 0.25rem;
   color: white;
-  background-color: red;
+  background-color: green;
   cursor: pointer;
 }
 
