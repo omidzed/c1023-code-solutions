@@ -1,15 +1,30 @@
+import { ChangeEvent, useState } from 'react';
 import { QuotesList } from './QuotesList';
-import { SeachBox } from './SearchBox';
+import { SearchBox } from './SearchBox';
 
 type SearchableListProps = {
   quotes: string[];
 };
 
 export function SearchableList({ quotes }: SearchableListProps) {
+  const [inputValue, setInputValue] = useState('');
+
+  const filteredQuotes: string[] = quotes.filter((quote) =>
+    quote.toLowerCase().includes(inputValue.toLowerCase())
+  );
+
+  function handleInputChange(event: ChangeEvent<HTMLInputElement>) {
+    try {
+      setInputValue(event.target.value);
+    } catch (err) {
+      setInputValue('error message');
+    }
+  }
+
   return (
     <div className="searchable-list">
-      <SeachBox />
-      <QuotesList quotes={quotes} />
+      <SearchBox value={inputValue} onInputChange={handleInputChange} />
+      <QuotesList filteredQuotes={filteredQuotes} />
     </div>
   );
 }

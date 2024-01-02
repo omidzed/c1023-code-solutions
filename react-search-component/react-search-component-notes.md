@@ -3,6 +3,7 @@
 ## Notes
 
 Create a way for the search box to look for the letters being typed into it in the list of quotes
+setInputValue = quotes.filter((quote)=> quote.includes({inputValue}));
 
 Make sure you convert what is being typed in the searchBox to lowercase, so that the it is not case sensitive (per exercise directions)
 

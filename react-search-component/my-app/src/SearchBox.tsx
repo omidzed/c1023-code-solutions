@@ -1,6 +1,10 @@
-import { useState } from 'react';
+import { ChangeEvent, useState } from 'react';
 
-export function SeachBox() {
+type SearchBoxProps = {
+  value: string;
+  onInputChange: (event: ChangeEvent<HTMLInputElement>) => void;
+};
+export function SearchBox({ value, onInputChange }: SearchBoxProps) {
   const [placeholder, setPlaceholder] = useState('Search...');
 
   function handleClick() {
@@ -17,7 +21,9 @@ export function SeachBox() {
         id="myTextarea"
         placeholder={placeholder}
         onClick={handleClick}
-        onBlur={handleBlur}></input>
+        onBlur={handleBlur}
+        value={value}
+        onChange={onInputChange}></input>
     </div>
   );
 }
