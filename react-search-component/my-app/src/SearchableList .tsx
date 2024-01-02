@@ -14,11 +14,7 @@ export function SearchableList({ quotes }: SearchableListProps) {
   );
 
   function handleInputChange(event: ChangeEvent<HTMLInputElement>) {
-    try {
-      setInputValue(event.target.value);
-    } catch (err) {
-      setInputValue('error message');
-    }
+    setInputValue(event.target.value);
   }
 
   return (

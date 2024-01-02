@@ -34,3 +34,13 @@ input:focus {
   margin: 0 5em;
   font-size: 1.4rem;
 }
+
+p {
+  color: red;
+  margin: 0 16em;
+  font-size: 1.2rem;
+}
+
+.hidden {
+  display: none;
+}
