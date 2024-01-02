@@ -1,0 +1,58 @@
+.hot-button {
+  border: 1px solid rgb(70, 70, 70);
+  border-radius: 0.25rem;
+  font-size: 1.5rem;
+  color: black;
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0.005);
+  transition: background-color 0.15s ease, color 0.15s ease;
+  box-shadow: 7px 6px 5px rgb(16, 16, 16);
+}
+
+.purple {
+  background-color: rgb(54, 28, 117);
+  color: white;
+}
+
+.lavender {
+  background-color: rgb(103, 78, 167);
+  color: white;
+}
+
+.pink {
+  background-color: rgb(224, 102, 102);
+  color: white;
+}
+
+.orange {
+  background-color: rgb(246, 178, 107);
+  color: black;
+}
+
+.yellow {
+  background-color: rgb(246, 255, 0);
+  color: black;
+}
+
+.white {
+  background-color: white;
+  color: black;
+}
+
+.click-count {
+  margin-top: 2rem;
+  background-color: rgba(238, 255, 0, 0.623);
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 1.2rem;
+  border: 0.15rem solid black;
+  border-radius: 2rem 1rem;
+}
+
+.hot-button:focus {
+  outline: none;
+}
+
+.hot-button:active {
+  top: 3px;
+}
