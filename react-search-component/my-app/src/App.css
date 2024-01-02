@@ -1,6 +1,7 @@
 body {
   margin: 0 auto;
   padding: 2rem;
+  background-color: rgba(91, 211, 224, 0.449);
 }
 
 .search-box {
@@ -11,17 +12,25 @@ body {
 }
 
 input {
-  background-image: url('./search-solid.svg'); /* Path to your SVG */
+  background-image: url('./search-solid.svg');
   background-repeat: no-repeat;
-  background-size: 20px 20px; /* Size of your SVG */
-  background-position: 8px 8px; /* Position of your SVG */
-  padding-left: 2.5rem;
-  width: 40%;
-  height: 2rem;
-  font-size: 1rem;
+  background-size: 20px;
+  background-position: 30px 17px;
+  padding-left: 4.5rem;
+  width: 50%;
+  height: 3.2rem;
+  font-size: 1.3rem;
+  border: 1px solid rgba(95, 92, 92, 0.134);
+  color: rgba(0, 0, 0, 0.7);
+  border-radius: 40px;
+  background-color: white;
+}
+
+input:focus {
+  outline: none;
 }
 
 .quotes-list {
-  margin-left: 2rem;
-  font-size: 1.3rem;
+  margin: 0 5em;
+  font-size: 1.4rem;
 }
