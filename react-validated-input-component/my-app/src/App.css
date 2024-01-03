@@ -1,0 +1,40 @@
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+label {
+  margin-left: 0.25rem;
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+
+.password-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 10rem;
+}
+
+input {
+  border: 1px solid black;
+  border-radius: 2px;
+  padding: 0 0.5rem;
+}
+
+p {
+  margin-left: 0.25rem;
+  margin-top: 0.5rem;
+  color: red;
+  font-size: 0.6rem;
+  width: 14rem;
+  font-weight: bold;
+  letter-spacing: -0.02rem;
+}
+
+svg {
+  display: inline;
+  margin-left: 0.5rem;
+}
