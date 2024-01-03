@@ -1,12 +1,14 @@
 import { useState } from 'react';
-// import { TopicCard } from './TopicCard';
+//import { TopicCard } from './TopicCard';
+
+type Topic = {
+  id: number;
+  title: string;
+  content: string;
+};
 
 type AccordionProps = {
-  topics: {
-    id: number;
-    title: string;
-    content: string;
-  }[];
+  topics: Topic[];
 };
 
 export function Accordion({ topics }: AccordionProps) {
@@ -16,19 +18,17 @@ export function Accordion({ topics }: AccordionProps) {
     setIsOpen(!isOpen);
   }
 
-  const accordionTopics = topics.map((t) => (
-    <div className="topics-data">
-      <li key={t.id} onClick={handleClick}>
-        {t.title}
-      </li>
-      <p>{t.content}</p>
-    </div>
-  ));
-
   return (
-    <>
-      <ul className="topics-list">{accordionTopics}</ul>
-      {/* <TopicCard topics={topics} /> */}
-    </>
+    <div className="topics-list">
+      {topics.map((t) => (
+        <div className="topics-data" key={t.id} onClick={handleClick}>
+          {t.title}
+          <p>{t.content}</p>
+        </div>
+      ))}
+    </div>
   );
+}
+{
+  /* <TopicCard topics={topics} /> */
 }
