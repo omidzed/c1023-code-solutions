@@ -5,8 +5,8 @@ export function RegistrationFormUncontrolled() {
     event.preventDefault();
     const form = event.currentTarget as HTMLFormElement;
     const formData = new FormData(form);
-    const formDataObject = Object.fromEntries(formData.entries());
-    console.log('formDataObject', formDataObject);
+    const formDataObj = Object.fromEntries(formData.entries());
+    console.log('formDataObj', formDataObj);
   }
 
   return (
