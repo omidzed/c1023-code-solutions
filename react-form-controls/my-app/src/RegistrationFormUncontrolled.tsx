@@ -1,12 +1,14 @@
+import { FormEvent } from 'react';
+
 export function RegistrationFormUncontrolled() {
-  function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+  function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const form = event.currentTarget as HTMLFormElement;
     const formData = new FormData(form);
-    for (const [username, password] of formData.entries()) {
-      console.log({ username, password });
-    }
+    const formDataObject = Object.fromEntries(formData.entries());
+    console.log('formDataObject', formDataObject);
   }
+
   return (
     <form onSubmit={handleSubmit}>
       <label>
