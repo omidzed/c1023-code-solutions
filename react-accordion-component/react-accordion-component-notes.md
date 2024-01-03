@@ -2,28 +2,13 @@
 
 ## Notes
 
-All student notes should be written here.
+Place topics[] in app.tsx
 
-How to write `Code Examples` in markdown
+create Accordion.tsx
+pass topics[] as a Prop to Accordion.tsx
 
-for JS:
+create skeleton for the accordion
 
-```javascript
-const data = 'Howdy';
-```
+manage state for the accordion
 
-for HTML:
-
-```html
-<div>
-  <p>This is text content</p>
-</div>
-```
-
-for CSS:
-
-```css
-div {
-  width: 100%;
-}
-```
+figure out events and connect them to the state for Accordion and the app

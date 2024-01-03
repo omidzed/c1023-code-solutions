@@ -1,4 +1,4 @@
-// import { useState } from 'react';
+// import { Accordion } from './Accordion';
 // import './App.css';
 
 // const topics = [
@@ -22,7 +22,7 @@
 //   },
 // ];
 // function App() {
-//   return <></>;
+//   return <Accordion topics={topics} />;
 // }
 
 // export default App;
