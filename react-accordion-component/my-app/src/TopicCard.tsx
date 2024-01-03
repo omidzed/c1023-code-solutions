@@ -8,7 +8,9 @@ type TopicCardProps = {
 
 export function TopicCard({ topics }: TopicCardProps) {
   const accordionTopicsContent = topics.map((t) => (
-    <p key={t.id}>{t.content}</p>
+    <div key={t.id}>
+      <p>{t.content}</p>
+    </div>
   ));
-  return { accordionTopicsContent };
+  return <div className="content">{accordionTopicsContent}</div>;
 }

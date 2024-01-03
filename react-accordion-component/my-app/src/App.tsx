@@ -20,6 +20,12 @@ const topics = [
     content:
       'JavaScript (/ˈdʒɑːvəˌskrɪpt/), often abbreviated as JS, is a high-level, interpreted scripting language that conforms to the ECMAScript specification. JavaScript has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.',
   },
+  {
+    id: 10,
+    title: 'React',
+    content:
+      'React is a popular JavaScript library for building dynamic user interfaces. It offers a component-based architecture, efficient rendering, and a reactive data flow model, enabling developers to create scalable, fast, and interactive web applications with less coding effort.',
+  },
 ];
 function App() {
   return <Accordion topics={topics} />;
