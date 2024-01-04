@@ -1,3 +1,31 @@
-div {
-  background-image: url('hylian-emblem.svg');
+body {
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: 450px 300px;
+  font-family: 'Proza Libre', sans-serif;
+  margin: 0;
+}
+
+.overlay-shade {
+  background-color: rgba(0, 0, 0, 0.949);
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  font-size: 1.5rem;
+}
+
+h1 {
+  padding-left: 2.5rem;
+}
+
+.menu-drawer {
+  width: 25%;
+  border: 2px solid black;
+  height: 100vh;
+  margin-top: 0;
+  margin-left: 0;
 }
