@@ -8,11 +8,11 @@ type TopicCardProps = {
   isOpen: boolean;
 };
 
-export function TopicCard({ topic, onClick }: TopicCardProps) {
+export function TopicCard({ topic, onClick, isOpen }: TopicCardProps) {
   return (
     <div className="topic-card" onClick={onClick}>
       <span className="title">{topic.title}</span>
-      {topic && <p>{topic.content}</p>}
+      {isOpen && <p>{topic.content}</p>}
     </div>
   );
 }

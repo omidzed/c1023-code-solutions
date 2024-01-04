@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { TopicCard } from './TopicCard';
+import { Fragment } from 'react';
 
 type Topic = {
   id: number;
@@ -12,15 +13,23 @@ type AccordionProps = {
 };
 
 export function Accordion({ topics }: AccordionProps) {
-  const [topic, setTopic] = useState<Topic>();
+  const [topic, setTopic] = useState<Topic | null>();
 
-  const topicCards = topics.map((t) => (
-    <TopicCard key={t.id} topic={t} onClick={handleClick} isOpen={false} />
+  const topicCards = topics.map((clickedTopic) => (
+    <Fragment key={clickedTopic.id}>
+      <TopicCard
+        topic={clickedTopic}
+        onClick={() => handleClick(clickedTopic)}
+        isOpen={clickedTopic.id === topic?.id}
+      />
+    </Fragment>
   ));
 
-  function handleClick() {
-    setTopic(topic);
-    console.log(topic);
+  function handleClick(clickedTopic: Topic) {
+    setTopic(clickedTopic);
+    if (clickedTopic.id === topic?.id) {
+      setTopic(null);
+    }
   }
 
   return <>{topicCards}</>;
