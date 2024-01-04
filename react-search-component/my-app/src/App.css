@@ -1,0 +1,46 @@
+body {
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: rgba(91, 211, 224, 0.449);
+}
+
+.search-box {
+  text-align: center;
+  padding: 2rem;
+  margin: 1rem;
+  margin-top: 4rem;
+}
+
+input {
+  background-image: url('./search-solid.svg');
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 30px 17px;
+  padding-left: 4.5rem;
+  width: 50%;
+  height: 3.2rem;
+  font-size: 1.3rem;
+  border: 1px solid rgba(95, 92, 92, 0.134);
+  color: rgba(0, 0, 0, 0.7);
+  border-radius: 40px;
+  background-color: white;
+}
+
+input:focus {
+  outline: none;
+}
+
+.quotes-list {
+  margin: 0 5em;
+  font-size: 1.4rem;
+}
+
+p {
+  color: red;
+  margin: 0 16em;
+  font-size: 1.2rem;
+}
+
+.hidden {
+  display: none;
+}
