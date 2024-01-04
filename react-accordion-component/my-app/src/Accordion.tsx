@@ -1,5 +1,5 @@
 import { useState } from 'react';
-//import { TopicCard } from './TopicCard';
+import { TopicCard } from './TopicCard';
 
 type Topic = {
   id: number;
@@ -12,23 +12,16 @@ type AccordionProps = {
 };
 
 export function Accordion({ topics }: AccordionProps) {
-  const [isOpen, setIsOpen] = useState(false);
+  const [topic, setTopic] = useState<Topic>();
+
+  const topicCards = topics.map((t) => (
+    <TopicCard key={t.id} topic={t} onClick={handleClick} isOpen={false} />
+  ));
 
   function handleClick() {
-    setIsOpen(!isOpen);
+    setTopic(topic);
+    console.log(topic);
   }
 
-  return (
-    <div className="topics-list">
-      {topics.map((t) => (
-        <div className="topics-data" key={t.id} onClick={handleClick}>
-          {t.title}
-          <p>{t.content}</p>
-        </div>
-      ))}
-    </div>
-  );
-}
-{
-  /* <TopicCard topics={topics} /> */
+  return <>{topicCards}</>;
 }

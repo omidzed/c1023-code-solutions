@@ -1,16 +1,18 @@
-// type TopicCardProps = {
-//   topics: {
-//     id: number;
-//     title: string;
-//     content: string;
-//   };
-// };
+type TopicCardProps = {
+  topic: {
+    id: number;
+    title: string;
+    content: string;
+  };
+  onClick: () => void;
+  isOpen: boolean;
+};
 
-// export function TopicCard({ topics }: TopicCardProps) {
-//   const accordionTopicsContent = topics.map((t) => (
-//     <div key={t.id}>
-//       <p>{t.content}</p>
-//     </div>
-//   ));
-//   return <div className="content">{accordionTopicsContent}</div>;
-// }
+export function TopicCard({ topic, onClick }: TopicCardProps) {
+  return (
+    <div className="topic-card" onClick={onClick}>
+      <span className="title">{topic.title}</span>
+      {topic && <p>{topic.content}</p>}
+    </div>
+  );
+}
