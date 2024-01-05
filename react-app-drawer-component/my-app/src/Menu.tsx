@@ -6,7 +6,10 @@ export function Menu({ menuItems }: MenuProps) {
   const menuItemsList = menuItems.map((item) => <li> {item}</li>);
   return (
     <>
-      <ul>{menuItemsList}</ul>
+      <ul>
+        <h1>Choose a Game</h1>
+        {menuItemsList}
+      </ul>
     </>
   );
 }

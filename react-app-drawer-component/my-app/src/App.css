@@ -1,7 +1,8 @@
 body {
+  background-image: url('./hylian-emblem.svg');
   background-repeat: no-repeat;
-  background-size: 40%;
-  background-position: 450px 300px;
+  background-size: 30%;
+  background-position: center top 250px;
   font-family: 'Proza Libre', sans-serif;
   margin: 0;
 }
@@ -15,17 +16,42 @@ ul {
 }
 
 li {
+  white-space: pre;
   font-size: 1.5rem;
-}
-
-h1 {
-  padding-left: 2.5rem;
+  margin-bottom: 1rem;
+  letter-spacing: -0.1rem;
+  /* stylelint-disable-next-line font-family-name-quotes */
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
 }
 
 .menu-drawer {
-  width: 25%;
+  width: 20rem;
   border: 2px solid black;
+  border-left: none;
+  border-top: none;
+  border-bottom: none;
   height: 100vh;
-  margin-top: 0;
-  margin-left: 0;
+  z-index: 1;
+}
+
+.closed {
+  transform: translateX(-325px);
+  transition: transform 0.2s ease-in-out;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  margin-top: 4rem;
+  display: inline-block;
+}
+
+.hamburger-container {
+  padding: 0.4rem;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
 }
