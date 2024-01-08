@@ -11,9 +11,9 @@ const menuItems = [
 
 function App() {
   return (
-    <>
+    <div>
       <AppDrawer menuItems={menuItems} />
-    </>
+    </div>
   );
 }
 

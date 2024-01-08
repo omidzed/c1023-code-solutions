@@ -2,7 +2,7 @@ body {
   background-image: url('./hylian-emblem.svg');
   background-repeat: no-repeat;
   background-size: 30%;
-  background-position: center top 250px;
+  background-position: center top 300px;
   font-family: 'Proza Libre', sans-serif;
   margin: 0;
 }
@@ -38,6 +38,7 @@ li {
   height: 100vh;
   z-index: 1;
   position: absolute;
+  background-color: white;
   transition: transform 0.2s ease-in-out;
 }
 
@@ -49,14 +50,6 @@ li {
   transform: translateX(0);
 }
 
-h1 {
-  font-size: 2rem;
-  margin-bottom: 3rem;
-  margin-top: 4rem;
-  display: inline-block;
-  letter-spacing: -0.15rem;
-}
-
 .hamburger-container {
   padding: 0.4rem;
   cursor: pointer;
@@ -66,13 +59,19 @@ h1 {
   display: none;
 }
 
-.drawer-container {
-  position: absolute;
+.header {
+  text-align: center;
 }
 
-.heading {
-  position: relative;
+.header-open {
   text-align: center;
-  z-index: 1;
-  align-items: center;
+  padding-top: 3.2rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  margin-top: 4rem;
+  display: inline-block;
 }

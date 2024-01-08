@@ -9,23 +9,29 @@ type AppDrawerProps = {
 
 export function AppDrawer({ menuItems }: AppDrawerProps) {
   const [isOpen, setIsOpen] = useState(false);
+  const [item, setItem] = useState('No Game Selected!');
 
   function toggleDrawer() {
     setIsOpen(!isOpen);
   }
 
+  function onSelect(menuItem: string) {
+    setItem(menuItem);
+    toggleDrawer();
+  }
+
   return (
-    <div className="wrapper">
-      <div className={'drawer-container'}>
-        <div className={isOpen ? 'hidden' : 'hamburger-container'}>
-          <GiHamburgerMenu size={35} onClick={toggleDrawer} />
-        </div>
-        <div className={isOpen ? 'menu-drawer open' : 'menu-drawer closed'}>
-          <Menu menuItems={menuItems} />
-        </div>
-        <OverlayShade toggle={toggleDrawer} isOpen={isOpen} />
+    <div className={'drawer-container'}>
+      <div className={isOpen ? 'hidden' : 'hamburger-container'}>
+        <GiHamburgerMenu size={35} onClick={toggleDrawer} />
+      </div>
+      <div className={isOpen ? 'menu-drawer open' : 'menu-drawer closed'}>
+        <Menu onSelect={onSelect} menuItems={menuItems} />
+      </div>
+      <OverlayShade toggle={toggleDrawer} isOpen={isOpen} />
+      <div className={isOpen ? 'header-open' : 'header'}>
+        <h1>{item}</h1>
       </div>
     </div>
   );
 }
-//  <h1 className="heading">heading</h1>
